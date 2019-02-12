@@ -45,10 +45,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [1] = LAYOUT( \
     KC_ESC,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,     KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,    XXXXXXX, \
-    RGB_TOG,   RGBRST,  RGB_HUI, RGB_SAI, RGB_VAI, XXXXXXX,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_UP,   XXXXXXX, KC_DEL, \
-    _______,     RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD, XXXXXXX,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_LEFT, KC_RGHT,        XXXXXXX, \
+    RGB_TOG,   KC_BTN1,  KC_MS_U, KC_BTN2, XXXXXXX, RGBRST,   RGB_HUI, RGB_SAI, RGB_VAI, XXXXXXX, XXXXXXX, KC_UP,   XXXXXXX, KC_DEL, \
+    _______,     KC_MS_L, KC_MS_D, KC_MS_R, XXXXXXX, RGB_MOD,   RGB_HUD, RGB_SAD, RGB_VAD, XXXXXXX, KC_LEFT, KC_RGHT,        XXXXXXX, \
     _______,       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_DOWN, _______, KC_PGUP, _______, \
-    XXXXXXX,   _______,    _______,    _______,    XXXXXXX,       XXXXXXX, _______, XXXXXXX,                   KC_HOME, KC_PGDN, KC_END \
+    XXXXXXX,   _______,    _______,    _______,    XXXXXXX,       XXXXXXX, _______, KC_BTN1,                   KC_HOME, KC_PGDN, KC_END \
   )
 };
 
