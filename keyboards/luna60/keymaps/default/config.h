@@ -20,4 +20,6 @@
 // #define USE_SERIAL
 // #define USE_I2C
 
+#define TAPPING_TERM 130
+
 // #define MASTER_RIGHT
