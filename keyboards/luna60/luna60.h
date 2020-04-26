@@ -1,4 +1,4 @@
-/* Copyright 2018 Eucalyn
+/* Copyright 2019 Iceman
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -13,24 +13,9 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef LUNA60_H
-#define LUNA60_H
+#pragma once
 
 #include "quantum.h"
-
-#ifdef RGBLIGHT_ENABLE
-//rgb led driver
-#include "ws2812.h"
-#endif
-
-#ifdef USE_I2C
-#include <stddef.h>
-#ifdef __AVR__
-  #include <avr/io.h>
-  #include <avr/interrupt.h>
-#endif
-#endif
-
 
 // This a shortcut to help you visually see your layout.
 // The following is an example using the Planck MIT layout
@@ -55,5 +40,3 @@
   { R30, R31, R32,   R33,   R34,   R35,   R36, KC_NO, KC_NO }, \
   { R40, R41, R42,   R43, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO } \
 }
-
-#endif

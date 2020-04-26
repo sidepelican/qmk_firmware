@@ -18,7 +18,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #pragma once
 
 #include "config_common.h"
-#include <serial_config.h>
 
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0xFEED
@@ -30,6 +29,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define TAPPING_FORCE_HOLD
 #define TAPPING_TERM 120
+
+#define USE_SERIAL
 
 /* key matrix size */
 #define MATRIX_ROWS 10
@@ -51,6 +52,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* COL2ROW, ROW2COL*/
 #define DIODE_DIRECTION COL2ROW
+
+/*
+ * Split Keyboard specific options, make sure you have 'SPLIT_KEYBOARD = yes' in your rules.mk, and define SOFT_SERIAL_PIN.
+ */
+#define SOFT_SERIAL_PIN D2
 
 // #define BACKLIGHT_PIN B7
 // #define BACKLIGHT_BREATHING
@@ -147,6 +153,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGB_DI_PIN D3
 
 #define RGBLED_NUM 8
+#define RGBLIGHT_SPLIT
 
 #define RGBLIGHT_HUE_STEP 10
 #define RGBLIGHT_SAT_STEP 17
